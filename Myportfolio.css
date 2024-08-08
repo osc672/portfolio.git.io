@@ -950,3 +950,55 @@ footer span a:hover{
 .publications-container a:hover {
     background-color: #0056b3;
 }
+
+/* project*/
+.portfolio {
+    padding: 50px 0;
+}
+
+.portfolio .title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: calc(50% - 40px);
+}
+
+.project-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    margin: 5px 0;
+}
+
+.project-images img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #3498db;
+    text-decoration: none;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
