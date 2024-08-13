@@ -1002,3 +1002,34 @@ footer span a:hover{
 .project-links a:hover {
     text-decoration: underline;
 }
+.project-card {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.project-card button, .project-card a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.project-card button:hover, .project-card a:hover {
+    background-color: #0056b3;
+}
