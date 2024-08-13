@@ -126,3 +126,11 @@ function initialize() {
 
 // Initialize on document load
 document.addEventListener('DOMContentLoaded', initialize);
+
+function openOSCBot() {
+    window.open('https://t.me/OSCVLK_BOT', '_blank');
+}
+
+function openVQABot() {
+    window.open('https://t.me/visuval_question_answering_bot', '_blank');
+}
