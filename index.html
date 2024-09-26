@@ -67,13 +67,16 @@
         <h2 class="title">About Me</h2>
         <div class="about-content">
             <div class="column left">
-                <!-- Content for left column (if needed) -->
+                <div class="text">Olupalli Sai Chand</div>
+                <p>
+                    I am a highly motivated and detail-oriented Data Analyst with a robust background in data analysis, visualization, and reporting. I have extensive experience working with tools such as PowerBI, Tableau, SQL, Python and advanced Excel etc. Throughout my career, I have successfully contributed to a variety of data projects, showcasing strong analytical and problem-solving skills. I am eager to apply my expertise to drive innovation and deliver impactful solutions in a dynamic Data Analyst role.
+                </p>
             </div>
             <div class="column right">
-                <div class="text">Olupalli Sai Chand</div>
-                <p>Highly motivated and detail-oriented Data Analyst with a solid background in data analysis, visualization, and reporting. My experience includes extensive use of tools such as Power BI, SQL, Python, Tableau, Pyspark, and advanced Excel. Successfully contributed to a variety of data projects, showcasing strong analytical and problem-solving skills. Eager to apply my expertise to drive innovation and deliver impactful solutions in a dynamic Data Analyst role.</p>
-                <a href="https://drive.google.com/file/d/1KDxb4hdLHNKvBHUd7SlwJjtgZzfMlyWu/view?usp=sharing" target="_blank" rel="noopener noreferrer">My Resume</a>
-                <a href="https://drive.google.com/file/d/1AHjRkP-1_8y1i5KlZ8lAxf9Jono7HVsb/view?usp=sharing" target="_blank" rel="noopener noreferrer">My Photo</a>
+                <div class="btn-container">
+                    <a href="https://drive.google.com/file/d/1KDxb4hdLHNKvBHUd7SlwJjtgZzfMlyWu/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn">View My Resume</a>
+                    <a href="https://drive.google.com/file/d/1AHjRkP-1_8y1i5KlZ8lAxf9Jono7HVsb/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn">View My Photo</a>
+                </div>
             </div>
         </div>
     </div>
@@ -95,7 +98,7 @@
         <p>Course: MCA</p> 
         <p class="timeline-institution">College: Kakaraparti Bhavanarayana College (Autonomous), VIJAYAWADA</p>
         <span class="timeline-year">Passing Year: 2022-2024</span>
-        <p class="timeline-cgpa">CGPA: 8.7</p>
+        <p class="timeline-cgpa">CGPA: 8.3</p>
         <div class="project-details">
             <p class="timeline-project">Project: ONLINE FAKE LOGO DETECTION SYSTEM.</p>
             <a class="toggle-details" onclick="toggleDetails(this)">View More</a>
@@ -108,7 +111,7 @@
                 <p><strong>Accuracy:</strong> Achieved high accuracy through intensive training and validation on a weighted dataset.</p>
                 <p><strong>Evaluation Techniques:</strong> Used visualization and predictive analysis on test images to ensure reliable logo detection performance.</p>
                 <div class="cert-card">
-                <p>This is my marks list.</p>
+                <p>This is my Certificate.</p>
                 <p><a href="https://drive.google.com/file/d/1DdgeozLU9nVD2A_tmdGTNEK8y6q9aBfh/view?usp=sharing" target="_blank">View Certificate</a></p></div>
             </div>
         </div>
@@ -131,7 +134,7 @@
             <a class="toggle-details" onclick="toggleDetails(this)">View More</a>
             <div class="details" style="display: none;">
                 <div class="cert-card">
-                <p>This is my marks list.</p>
+                <p>This is my Certificate.</p>
                 <p><a href="https://drive.google.com/file/d/1pZTp54le4p1pq3dHD3VeOp5kPDgvRZF_/view?usp=sharing" target="_blank">View Certificate</a></p></div>
             </div>
         </div>
@@ -154,7 +157,7 @@
                         <a class="toggle-details" onclick="toggleDetails(this)">View More</a>
                         <div class="details" style="display: none;">
                             <div class="cert-card">
-                            <p>This is my marks list.</p>
+                            <p>This is my Certificate.</p>
                             <p><a href="https://drive.google.com/file/d/1PwThGCrxCehIYTbtjh_ZkdxjPctABxFp/view?usp=sharing" target="_blank">View Certificate</a></p></div>
                         </div>
                     </div>
@@ -175,7 +178,7 @@
                         <a class="toggle-details" onclick="toggleDetails(this)">View More</a>
                         <div class="details" style="display: none;">
                             <div class="cert-card">
-                            <p>This is my marks list.</p>
+                            <p>This is my Certificate.</p>
                             <p><a href="https://drive.google.com/file/d/1lc9DnZ4HyVHI9wbi62HIb_IzkX2h22ZN/view?usp=sharing" target="_blank">View Certificate</a></p></div>
                         </div>
                     </div>
@@ -186,52 +189,101 @@
 </section>
 
     
-
-<section class="skills" id="skills">
+<!-- technical skills -->
+<section class="skills-container" id="skills">
     <div class="max-width">
         <h2 class="title">Technical Skills</h2>
-        <div class="skills-container">
-            <!-- Programming Languages -->
-            <div class="category">
-                <h3>Programming Languages</h3>
-                <ul>
+        <div class="skills-content">
+            <!-- Skill 1: Python -->
+            <div class="skill-card" onclick="toggleSkillDetails('skill1')">
+                <div class="skill-box">
+                    <h3>Python</h3>
+                </div>
+                <div id="skill1" class="skill-details">
+                    <p>Experienced with Python for Data Analysis, Data Visualization and machine learning etc.</p>
+                </div>
+            </div>
+            
+            <!-- Skill 2: SQL -->
+            <div class="skill-card" onclick="toggleSkillDetails('skill2')">
+                <div class="skill-box">
+                    <h3>SQL</h3>
+                </div>
+                <div id="skill2" class="skill-details">
+                    <p>Proficient in SQL for database Querying and Management.</p>
+                </div>
+            </div>
+            
+            <!-- Skill 3: Power BI -->
+            <div class="skill-card" onclick="toggleSkillDetails('skill3')">
+                <div class="skill-box">
+                    <h3>Power BI</h3>
+                </div>
+                <div id="skill3" class="skill-details">
+                    <p>Skilled in using PowerBI for creating Dashboards and Data Reports.</p>
+                </div>
+            </div>
+            
+            <!-- Skill 4: Tableau -->
+            <div class="skill-card" onclick="toggleSkillDetails('skill4')">
+                <div class="skill-box">
+                    <h3>Tableau</h3>
+                </div>
+                <div id="skill4" class="skill-details">
+                    <p>Advanced proficiency in Tableau for Data Visualization and Storytelling.</p>
+                </div>
+            </div>
 
-                    <li>Python</li>
-                </ul>
+            <!-- Skill 5: HTML -->
+            <div class="skill-card" onclick="toggleSkillDetails('skill5')">
+                <div class="skill-box">
+                    <h3>HTML</h3>
+                </div>
+                <div id="skill5" class="skill-details">
+                    <p>Skilled in using HTML to create structured and accessible web pages.</p>
+                </div>
             </div>
-            <!-- Databases -->
-            <div class="category">
-                <h3>Databases</h3>
-                <ul>
-                    <li>SQL</li>
 
-                </ul>
+            <!-- Skill 6: CSS -->
+            <div class="skill-card" onclick="toggleSkillDetails('skill6')">
+                <div class="skill-box">
+                    <h3>CSS</h3>
+                </div>
+                <div id="skill6" class="skill-details">
+                    <p>Proficient in using CSS for styling and responsive web design.</p>
+                </div>
             </div>
-            <!-- Data Visualization -->
-            <div class="category">
-                <h3>Data Visualization</h3>
-                <ul>
-                    <li>PowerBI</li>
-                    <li>Tableau</li>
-                </ul>
+
+            <!-- Skill 7: MS Word -->
+            <div class="skill-card" onclick="toggleSkillDetails('skill7')">
+                <div class="skill-box">
+                    <h3>MS Word</h3>
+                </div>
+                <div id="skill7" class="skill-details">
+                    <p>Proficient in MS Word for document Creation, Formatting, and Editing.</p>
+                </div>
             </div>
-            <!-- Web Technologies -->
-            <div class="category">
-                <h3>Web Technologies</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                </ul>
+
+            <!-- Skill 8: MS Excel -->
+            <div class="skill-card" onclick="toggleSkillDetails('skill8')">
+                <div class="skill-box">
+                    <h3>MS Excel</h3>
+                </div>
+                <div id="skill8" class="skill-details">
+                    <p>Advanced knowledge of MS Excel for data analysis, reporting, and automation using formulas.</p>
+                </div>
             </div>
-            <!-- Office Tools -->
-            <div class="category">
-                <h3>Office Tools</h3>
-                <ul>
-                    <li>MS Word</li>
-                    <li>Excel (Advanced)</li>
-                    <li>PowerPoint</li>
-                </ul>
+
+            <!-- Skill 9: PowerPoint -->
+            <div class="skill-card" onclick="toggleSkillDetails('skill9')">
+                <div class="skill-box">
+                    <h3>PowerPoint</h3>
+                </div>
+                <div id="skill9" class="skill-details">
+                    <p>Expertise in creating professional presentations using PowerPoint.</p>
+                </div>
             </div>
+            
         </div>
     </div>
 </section>
@@ -242,35 +294,80 @@
      <section class="soft-skills" id="soft-skills">
         <div class="max-width">
             <h2 class="title">Soft Skills</h2>
-            <div class="skills-container">
-                <!-- Communication Skills -->
-                <div class="category">
-                    <h3>Communication Skills</h3>
-                    <ul>
-                        <li>Communication</li>
-                        <li>Team Work</li>
-                    </ul>
+            <div class="skills-content">
+                <!-- Soft Skill 1: Communication -->
+                <div class="skill-card" onclick="toggleSkillDetails('softSkill1')">
+                    <div class="skill-box">
+                        <h3>Communication</h3>
+                    </div>
+                    <div id="softSkill1" class="skill-details">
+                        <p>Excellent communication skills in both verbal and written form, ensuring effective collaboration.</p>
+                    </div>
                 </div>
-                <!-- Management Skills -->
-                <div class="category">
-                    <h3>Management Skills</h3>
-                    <ul>
-                        <li>Time Management</li>
-                        <li>Multi Tasking</li>
-                    </ul>
+    
+                <!-- Soft Skill 2: Team Work -->
+                <div class="skill-card" onclick="toggleSkillDetails('softSkill2')">
+                    <div class="skill-box">
+                        <h3>Team Work</h3>
+                    </div>
+                    <div id="softSkill2" class="skill-details">
+                        <p>Strong team player with a collaborative mindset, able to work effectively in diverse groups.</p>
+                    </div>
                 </div>
-                <!-- Leadership and Personal Traits -->
-                <div class="category">
-                    <h3>Leadership and Personal Traits</h3>
-                    <ul>
-                        <li>Problem Solving</li>
-                        <li>Leadership</li>
-                        <li>Hardworking</li>
-                    </ul>
+                
+                <!-- Soft Skill 3: Problem Solving -->
+                <div class="skill-card" onclick="toggleSkillDetails('softSkill3')">
+                    <div class="skill-box">
+                        <h3>Problem Solving</h3>
+                    </div>
+                    <div id="softSkill3" class="skill-details">
+                        <p>Adept at identifying problems, analyzing data, and finding effective solutions.</p>
+                    </div>
+                </div>
+    
+                <!-- Soft Skill 4: Time Management -->
+                <div class="skill-card" onclick="toggleSkillDetails('softSkill4')">
+                    <div class="skill-box">
+                        <h3>Time Management</h3>
+                    </div>
+                    <div id="softSkill4" class="skill-details">
+                        <p>Skilled in prioritizing tasks and managing time efficiently to meet deadlines.</p>
+                    </div>
+                </div>
+                
+                <!-- Soft Skill 5: Multi-Tasking -->
+                <div class="skill-card" onclick="toggleSkillDetails('softSkill5')">
+                    <div class="skill-box">
+                        <h3>Multi-Tasking</h3>
+                    </div>
+                    <div id="softSkill5" class="skill-details">
+                        <p>Capable of handling multiple tasks effectively while maintaining high standards of performance.</p>
+                    </div>
+                </div>
+                
+                <!-- Soft Skill 6: Leadership -->
+                <div class="skill-card" onclick="toggleSkillDetails('softSkill6')">
+                    <div class="skill-box">
+                        <h3>Leadership</h3>
+                    </div>
+                    <div id="softSkill6" class="skill-details">
+                        <p>Strong leadership abilities, with experience leading teams and driving projects to completion.</p>
+                    </div>
+                </div>
+                
+                <!-- Soft Skill 7: Hardworking -->
+                <div class="skill-card" onclick="toggleSkillDetails('softSkill7')">
+                    <div class="skill-box">
+                        <h3>Hardworking</h3>
+                    </div>
+                    <div id="softSkill7" class="skill-details">
+                        <p>Dedicated and persistent in achieving goals, consistently putting in extra effort to ensure success.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    
     
 
     <!-- certifications -->
