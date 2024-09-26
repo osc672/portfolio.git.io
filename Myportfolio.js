@@ -134,3 +134,17 @@ function openOSCBot() {
 function openVQABot() {
     window.open('https://t.me/visuval_question_answering_bot', '_blank');
 }
+
+
+function toggleSkillDetails(skillId) {
+    const skillDetails = document.getElementById(skillId);
+    const isVisible = skillDetails.style.display === "block";
+
+    // Hide all skill-details
+    document.querySelectorAll('.skill-details').forEach(detail => {
+        detail.style.display = "none";
+    });
+
+    // Toggle the clicked skill-details
+    skillDetails.style.display = isVisible ? "none" : "block";
+}
