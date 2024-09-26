@@ -106,10 +106,7 @@ section .title::after{
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
-.navbar.sticky{
-    padding: 15px 0;
-    background: rgb(20, 153, 220);
-}
+.navbar.sticky { padding: 15px 0; background: rgb(0, 128, 128); /* Updated color */ }
 .navbar .max-width{
     display: flex;
     align-items: center;
@@ -120,10 +117,7 @@ section .title::after{
     font-size: 35px;
     font-weight: 600;
 }
-.navbar .logo a span{
-    color: rgb(20, 153, 220);
-    transition: all 0.3s ease;
-}
+.navbar .logo a span { color: rgb(0, 128, 128); /* Updated color */transition: all 0.3s ease; }
 .navbar.sticky .logo a span{
     color: #fff;
 }
@@ -142,9 +136,7 @@ section .title::after{
     margin-left: 25px;
     transition: color 0.3s ease;
 }
-.navbar .menu li a:hover{
-    color: rgb(20, 153, 220);
-}
+.navbar .menu li a:hover { color: rgb(0, 128, 128); /* Updated color */ }
 .navbar.sticky .menu li a:hover{
     color: #fff;
 }
@@ -160,7 +152,7 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: rgb(20, 153, 220);
+    background: rgb(0, 128, 128); /* Updated color */
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -206,66 +198,71 @@ section .title::after{
     font-size: 40px;
     margin: 5px 0;
 }
-.home .home-content .text-3 span{
-    color: rgb(20, 153, 220);
-    font-weight: 500;
+.home .home-content .text-3 span { color: rgb(0, 128, 128); /* Updated color */font-weight: 500;
 }
-.home .home-content a{
-    display: inline-block;
-    background: rgb(20, 153, 220);
-    color: #fff;
-    font-size: 25px;
-    padding: 12px 36px;
-    margin-top: 20px;
-    font-weight: 400;
-    border-radius: 6px;
-    border: 2px solid rgb(20, 153, 220);
-    transition: all 0.3s ease;
+.home .home-content a {
+    display: inline-block; background: rgb(0, 128, 128); /* Updated color */
+    color: #fff; font-size: 25px; padding: 12px 36px; margin-top: 20px; font-weight: 400;
+    border-radius: 6px; border: 2px solid rgb(0, 128, 128); /* Updated color */ transition: all 0.3s ease;
 }
-.home .home-content a:hover{
-    color: rgb(20, 153, 220);
-    background: none;
-}
+.home .home-content a:hover { color: rgb(0, 128, 128); /* Updated color */ background: none; }
 
 /* about me*/
-.about .about-content .left{
-    width: 45%;
+.about {
+    padding: 60px 0;
+    background: #f9f9f9;
 }
-.about .about-content .left img{
-    height: 350px;
-    width: 350px;
-    object-fit: cover;
-    border-radius: 10px;
+.about .max-width {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
-.about .about-content .right{
-    width: 55%;
-}
-.about .about-content .right .text{
-    font-size: 25px;
+.about .title {
+    font-size: 36px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
 }
-.about .about-content .right .text span{
-    color: rgb(20, 153, 220);
+.about .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-.about .about-content .right p{
-    text-align: justify;
+.about .column {
+    flex: 1;
+    padding: 20px;
 }
-.about .about-content .right a{
-    display: inline-block;
-    background: rgb(20, 153, 220);
+.about .column.left {
+    flex: 1.5;
+}
+.about .column .text {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+.about .column p {
+    color: #555;
+    line-height: 1.7;
+    text-align: justify; /* Justified text alignment */
+}
+.about .btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.about .btn {
+    padding: 10px 20px;
+    background-color: #3498db;
     color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 30px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid rgb(20, 153, 220);
-    transition: all 0.3s ease;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
 }
-.about .about-content .right a:hover{
-    color: rgb(20, 153, 220);
-    background: none;
+.about .btn:hover {
+    background-color: #2980b9;
 }
 
 /* Styles for education section */
@@ -298,7 +295,7 @@ section .title::after{
 
 .timeline-icon {
     font-size: 3rem;
-    color: #007bff;
+    color: rgb(0, 128, 128);
     position: absolute;
     top: 20px;
     left: 20px;
@@ -603,10 +600,7 @@ li {
 .contact .contact-content .row .info{
     margin-left: 30px;
 }
-.contact .contact-content .row i{
-    font-size: 25px;
-    color: rgb(20, 153, 220);
-}
+.contact .contact-content .row i { font-size: 25px; color: rgb(0, 128, 128); /* Updated color */ }
 .contact .contact-content .info .head{
     font-weight: 500;
 }
@@ -653,34 +647,17 @@ li {
   display: flex;
   align-items: center;
 }
-.right form .button-area button{
-  color: #fff;
-  display: block;
-  width: 160px!important;
-  height: 45px;
-  outline: none;
-  font-size: 18px;
-  font-weight: 500;
-  border-radius: 6px;
-  cursor: pointer;
-  flex-wrap: nowrap;
-  background: rgb(20, 153, 220);
-  border: 2px solid rgb(20, 153, 220);
-  transition: all 0.3s ease;
+.right form .button-area button {
+    color: #fff; display: block; width: 160px !important; height: 45px; outline: none;
+    font-size: 18px; font-weight: 500; border-radius: 6px; cursor: pointer; flex-wrap: nowrap;
+    background: rgb(0, 128, 128); /* Updated color */ border: 2px solid rgb(0, 128, 128); /* Updated color */
+    transition: all 0.3s ease;
 }
-.right form .button-area button:hover{
-  color: rgb(20, 153, 220);
-  background: none;
-}
+.right form .button-area button:hover { color: rgb(0, 128, 128); /* Updated color */ background: none; }
 
 
 /* footer */
-footer{
-    background: rgb(7, 145, 195);
-    padding: 15px 23px;
-    color: rgb(255, 252, 252);
-    text-align: center;
-}
+footer { background: rgb(0, 128, 128); /* Updated color */ padding: 15px 23px; color: rgb(255, 252, 252); text-align: center; }
 
 footer .social a{
     font-size:18px;
@@ -1033,3 +1010,93 @@ footer span a:hover{
 .project-card button:hover, .project-card a:hover {
     background-color: #0056b3;
 }
+
+.cert-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: calc(50% - 40px); /* Adjust width as needed for responsiveness */
+    max-width: 600px;
+    transition: transform 0.3s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.project-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.timeline-item {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: translateY(-5px);
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Card styles for both technical and soft skills */
+.skill-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: calc(33.33% - 40px); /* Adjust width for three cards in a row */
+    max-width: 300px;            /* Optional max-width for consistency */
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.skill-details {
+    display: none;
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Container for flex layout */
+.skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Evenly space out the cards */
+    gap: 20px; /* Space between cards */
+}
+
