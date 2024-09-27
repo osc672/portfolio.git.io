@@ -62,44 +62,50 @@ var typed = new Typed(".typing", {
     });
 });
 
-$(document).ready(function() {
-    // Filter publications by category
-    $('.filter-btn').on('click', function() {
-        var category = $(this).data('category');
+function togglePublicationDetail(button, detailType) {
+    const pubCard = button.closest('.pub-card');
+    const detailItem = pubCard.querySelector(`.pub-${detailType}`);
+    const isVisible = detailItem.style.display === "block";
 
-        if (category == 'all') {
-            $('.pub-card').fadeIn();
-        } else {
-            $('.pub-card').fadeOut(0);
-            $('.pub-card[data-category="' + category + '"]').fadeIn();
-        }
-    });
-});
-
-function toggleCertDetails(certId) {
-    const certDetails = document.getElementById(certId);
-    const isVisible = certDetails.style.display === "block";
-
-    // Hide all cert-details
-    document.querySelectorAll('.cert-details').forEach(detail => {
-        detail.style.display = "none";
+    // Hide all detail items of this pub-card
+    pubCard.querySelectorAll('.detail-item').forEach(item => {
+        item.style.display = "none";
     });
 
-    // Toggle the clicked cert-details
-    certDetails.style.display = isVisible ? "none" : "block";
+    // Toggle the specific detail
+    detailItem.style.display = isVisible ? "none" : "block";
+    button.textContent = isVisible ? `Show ${capitalizeFirstLetter(detailType)}` : `Hide ${capitalizeFirstLetter(detailType)}`;
 }
+
+function toggleAllDetails(button) {
+    const pubCard = button.closest('.pub-card');
+    const isVisible = pubCard.querySelector('.detail-item').style.display === "block";
+
+    // Toggle visibility of all details
+    pubCard.querySelectorAll('.detail-item').forEach(item => {
+        item.style.display = isVisible ? "none" : "block";
+    });
+
+    // Update the button text
+    button.textContent = isVisible ? "Show All" : "Hide All";
+}
+
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 
 // Function to toggle the details in education section
-function toggleDetails(element) {
-    const details = element.nextElementSibling;
-    if (details.style.display === "block") {
-        details.style.display = "none";
-        element.textContent = "View More";
-    } else {
-        details.style.display = "block";
-        element.textContent = "View Less";
-    }
+// Open Modal
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
 }
+
+// Close Modal
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+}
+
 
 // Function to toggle the details in certifications section
 function toggleCertDetails(certId) {
